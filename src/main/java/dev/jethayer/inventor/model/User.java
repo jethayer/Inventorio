@@ -1,4 +1,4 @@
-package dev.jethayer.inventor.Entity;
+package dev.jethayer.inventor.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
