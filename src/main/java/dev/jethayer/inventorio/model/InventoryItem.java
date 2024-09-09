@@ -1,4 +1,4 @@
-package dev.jethayer.inventor.model;
+package dev.jethayer.inventorio.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -20,6 +20,6 @@ public class InventoryItem {
     @Column(nullable = false)
     private int quantity;
 
-    @Column
+    @Column(nullable = false)
     private double price;
 }
