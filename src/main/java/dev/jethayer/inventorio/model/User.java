@@ -1,23 +1,27 @@
 package dev.jethayer.inventorio.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Entity
+@Table(name = "users")
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "first_name")
+    @Column(name = "username", nullable = false, unique = true)
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "password", nullable = false)
     private String lastName;
 
-    @Column(name = "email", nullable = false, unique = true)
-    private String email;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Role role;
 }
