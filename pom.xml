@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dev.jethayer</groupId>
-	<artifactId>inventor</artifactId>
+	<artifactId>inventorio</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventor</name>
+	<name>inventorio</name>
 	<description>Inventory management system</description>
 	<url/>
 	<licenses>
