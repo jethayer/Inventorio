@@ -20,6 +20,6 @@ public class InventoryItem {
     @Column(nullable = false)
     private int quantity;
 
-    @Column(nullable = false)
+    @Column
     private double price;
 }
